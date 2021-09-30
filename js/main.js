@@ -134,8 +134,10 @@ $('#form-contato').submit(function () {
         descricao.addClass('is-invalid');
         return false;
     }
-        
+    
+    
     // se chegar aqui pode enviar os dados!
     return true;
 });
+ 
 
