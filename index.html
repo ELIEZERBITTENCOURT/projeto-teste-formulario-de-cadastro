@@ -23,7 +23,7 @@
                     <div class="card-body">
                         <h1>Registro de contato</h1>
                         <!--Início do formulário-->
-                        <form id="form-contato" name="formulario">
+                        <form id="formulario" method="post" name="formulario">
 
                             <div class="form-row">
                                 <div class="form-group col-md-12">
@@ -35,16 +35,16 @@
 
                             <div class="form-row">
                                 <div class="form-group col-4">
-                                    <label for="data">Data de nascimento</label>
-                                    <input type="date" class="form-control" id="data" name="data" required>
+                                    <label for="nascimento">Data de nascimento</label>
+                                    <input type="date" class="form-control" id="nascimento" name="nascimento" required>
                                 </div>
                                 <div class="form-group col-4">
                                     <label for="cpf">CPF</label>
-                                    <input type="text" class="form-control cpf-mask" name="cpf" id="cpf" placeholder="Ex.: 000.000.000-00" required>
+                                    <input type="text" class="form-control cpf" name="cpf" id="cpf" placeholder="Ex.: 000.000.000-00" required>
                                 </div>
                                 <div class="form-group col-4">
-                                    <label for="celular">Celular</label>
-                                    <input type="text" class="form-control cel-sp-mask" name="celular" id="celular" placeholder="Ex.: (00) 00000-0000" required>
+                                    <label for="telefone">Celular</label>
+                                    <input type="text" class="form-control telefone" name="telefone" id="celular" placeholder="Ex.: (00) 00000-0000" required>
                                 </div>
                             </div>
 
@@ -56,14 +56,14 @@
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="cep">Cep</label>
-                                    <input type="text" class="form-control cep-mask" id="cep" placeholder="Ex.: 00000-000" required>
+                                    <input name="cep" class="form-control" type="text" id="cep" value="" size="10" maxlength="9" placeholder="Ex.: 00000-000" required>
                                 </div>
                             </div>
 
                             <div class="form-row">
                                 <div class="form-group col-md-6">
-                                    <label for="endereco">Endereço</label>
-                                    <input type="text" class="form-control" id="endereco" name="endereco" size="60"
+                                    <label for="rua">Endereço</label>
+                                    <input type="text" class="form-control" id="rua" name="rua" size="60"
                                         placeholder="Endereço" required>
                                 </div>
                                 <div class="form-group col-md-2">
@@ -73,7 +73,7 @@
                                 <div class="form-group col-4">
                                     <label for="complemento">Complemento</label>
                                     <input type="text" class="form-control" id="complemento" name="complemento"
-                                        size="60" placeholder="Complemento" required>
+                                        size="60" placeholder="Complemento">
                                 </div>
                             </div>
 
@@ -103,15 +103,9 @@
                                     </textarea>
                                 </div>
                             </div>
-
+                            
                             <div class="form-group text-center">
-                                <button type="submit" class="btn btn-primary" name="submeter" onclick="mostrarDados()" >
-                                    ENVIAR
-                                </button>
-                            </div>
-
-                            <div class="alert alert-danger d-none">
-                                Preencha o campo <span id="campo-erro"></span>!
+                               <input type="submit" value="Enviar" class="btn btn-primary" name="submit">
                             </div>
                         </form>
                         <!--Fim do formulário-->
@@ -131,7 +125,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
     </script>
-    <script src="/js/main.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type='text/javascript' src='//igorescobar.github.io/jQuery-Mask-Plugin/js/jquery.mask.min.js'></script>
+    <script type="text/javascript" src="/js/main.js"></script>
     <!--Fim dos scripts-->
 </body>
 
