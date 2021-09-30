@@ -6,23 +6,21 @@ Este formulário deverá conter validações para garantir a integridade dos dad
 de serem enviados.
 
 Os campos do formulário devem ser:
-NOME COMPLETO:
-DATA DE NASCIMENTO:
-CPF:
-CELULAR:
-E-MAIL:
-CEP (Busca de CEP):
-LOGRADOURO
-NÚMERO:
-COMPLEMENTO:
-BAIRRO:
-CIDADE:
-UF:
-DESCRIÇÃO (Bio)
+NOME COMPLETO:<br/>
+DATA DE NASCIMENTO:<br/>
+CPF:<br/>
+CELULAR:<br/>
+E-MAIL:<br/>
+CEP (Busca de CEP):<br/>
+LOGRADOURO<br/>
+NÚMERO:<br/>
+COMPLEMENTO:<br/>
+BAIRRO:<br/>
+CIDADE:<br/>
+UF:<br/>
+DESCRIÇÃO (Bio)<br/>
 
-# TECNOLOGIAS PERMITIDAS:
+# TECNOLOGIAS UTILIZADAS:
 * BOOTSTRAP 4
 * jQuery
-* Axios
-* Lodash
-* Toastr
+
